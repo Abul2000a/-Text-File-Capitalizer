@@ -23,7 +23,9 @@ using namespace std;string capitalizeCharStr(string &givenString)
         
     }
     return givenString;
-}int main(int argc,char*argv[])
+}
+
+int main(int argc,char*argv[])
 {    
     string s;
         string tot;
@@ -43,9 +45,7 @@ using namespace std;string capitalizeCharStr(string &givenString)
             getline(in,s);
             tot+=s+ "\n";
         }
-        cout<< tot;
-         
-        
+        cout << tot;
         in.close();
     } else {
         cout << "Failed to open file..";
@@ -53,7 +53,7 @@ using namespace std;string capitalizeCharStr(string &givenString)
        
         ofstream out;
         out.open(argv[1]);
-    cout<< capitalizeCharStr(tot);
+        cout << capitalizeCharStr(tot);
         out << tot;
         out.close();
 
